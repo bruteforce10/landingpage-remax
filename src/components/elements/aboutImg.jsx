@@ -23,6 +23,7 @@ const AboutImg = () => {
             rekanan pemasaran tepercaya
           </p>
         </div>
+
         <Image
           src={"/about-us.webp"}
           alt="about-img"
