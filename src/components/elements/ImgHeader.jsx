@@ -3,7 +3,7 @@ import { InfoHeader } from "./infoHeader";
 
 const ImgHeader = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-4 w-fit scale-105 origin-bottom ">
+    <div className="flex flex-col justify-center items-center gap-4 w-fit max-sm:scale-100 scale-105 origin-bottom ">
       <div className="flex gap-4 justify-center items-end max-lg:hidden">
         <Image
           src={"/img-header.webp"}

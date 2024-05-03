@@ -5,7 +5,7 @@ import Montserratt from "@/services/FontPremier";
 const Navbar = () => {
   return (
     <div
-      className={`navbar bg-base-100 container px-8 ${Montserratt.className}`}
+      className={`navbar bg-base-100 mx-auto max-w-[1250px] container px-8 ${Montserratt.className}`}
     >
       <div className="flex-1">
         <a className="btn btn-ghost text-xl">

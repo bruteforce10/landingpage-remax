@@ -1,3 +1,4 @@
+import About from "@/components/fragments/About";
 import Header from "@/components/fragments/Header";
 import Navbar from "@/components/fragments/Navbar";
 import TopNavbar from "@/components/fragments/TopNavbar";
@@ -9,6 +10,7 @@ export default function Home() {
       <TopNavbar />
       <Navbar />
       <Header />
+      <About />
     </main>
   );
 }

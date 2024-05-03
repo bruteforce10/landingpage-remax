@@ -5,3 +5,10 @@
 .swiper-pagination-bullet {
   background-color: #ffffff !important;
 }
+
+.text-stroke {
+  color: #ffffff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #044995;
+}
