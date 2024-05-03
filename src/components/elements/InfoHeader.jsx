@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import Montserratt from "@/services/FontPremier";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,28 +12,37 @@ export const InfoHeader = () => {
       <Swiper
         className="w-[200px]"
         slidesPerView={1}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         spaceBetween={10}
         onSlideChange={() => console.log("slide change")}
         onSwiper={() => console.log("swiper")}
         pagination={true}
-        modules={[Pagination]}
+        modules={[Autoplay, Pagination, Navigation]}
+        navigation={true}
       >
         <SwiperSlide>
           {" "}
           <div
-            className={` rounded-xl w-[200px] h-[200px] flex flex-col items-center justify-center bg-red-remax text-white`}
+            className={` rounded-xl w-[200px] h-[200px] flex flex-col items-center justify-center bg-red-remax text-white ${Montserratt.className} space-y-2`}
           >
-            <h5 className="text-7xl font-bold">115+</h5>
-            <p className="text-center">Memiliki Cabang Di berbagai negara</p>
+            <h5 className="text-7xl font-extrabold">115+</h5>
+            <p className="text-center leading-[-20px] w-[180px]">
+              Memiliki Cabang Di berbagai negara
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <div
-            className={` rounded-xl w-[200px] h-[200px] flex flex-col items-center justify-center bg-blue-remax text-white`}
+            className={` rounded-xl w-[200px] h-[200px] flex flex-col items-center justify-center bg-blue-remax text-white ${Montserratt.className} space-y-2`}
           >
-            <h5 className="text-7xl font-bold">115+</h5>
-            <p className="text-center">Memiliki Cabang Di berbagai negara</p>
+            <h5 className="text-7xl font-extrabold">50+</h5>
+            <p className="text-center leading-[-20px] w-[180px]">
+              Tahun Berpengalaman
+            </p>
           </div>
         </SwiperSlide>
       </Swiper>

@@ -5,7 +5,7 @@ import Open_sans from "@/services/FontSecondary";
 
 export default function Home() {
   return (
-    <main className={`min-h-screen  ${Open_sans.className}`}>
+    <main className={`min-h-screen overflow-x-hidden ${Open_sans.className}`}>
       <TopNavbar />
       <Navbar />
       <Header />
