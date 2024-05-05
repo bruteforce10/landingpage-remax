@@ -17,8 +17,6 @@ export const InfoHeader = () => {
           disableOnInteraction: false,
         }}
         spaceBetween={10}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={() => console.log("swiper")}
         pagination={true}
         modules={[Autoplay, Pagination, Navigation]}
         navigation={true}

@@ -12,3 +12,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #044995;
 }
+
+.modal-box {
+  padding: 0px !important;
+}

@@ -19,7 +19,10 @@ module.exports = {
     extend: {
       colors: {
         "blue-remax": "#044995",
+        "blue-warm": "#245EC2",
+        "blue-soft": "#A4D7F4",
         "red-remax": "#E11C2C",
+        "blue-remax-2": "#007DC3",
         tersier: "#F6F7F9",
         base: "##6694C4",
       },
