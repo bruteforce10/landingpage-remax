@@ -39,12 +39,12 @@ const CardWhyMe = ({
           src={icon?.url}
           alt="why-me"
           width={200}
-          className="absolute w-full h-auto min-w-28 max-w-32 max-sm:max-w-16 -right-2 -bottom-4"
+          className="absolute w-full h-auto sm:min-w-28 max-w-32 max-sm:max-w-20 -right-2 -bottom-4"
           height={200}
         />
       </div>
       <dialog id={`my_modal_${number}`} className="modal p-8">
-        <div className="modal-box bg-[#A4D7F4] text-[#007DC3] w-[1200px] max-sm:w-full  min-h-[500px] flex flex-col justify-between   ">
+        <div className="modal-box bg-${backgroundColor} text-${textColor} w-[1200px] max-sm:w-full  min-h-[500px] flex flex-col justify-between   ">
           <div className="py-8 px-8 ">
             <h4
               className={`${Montserratt.className} max-sm:text-xl text-2xl pb-4 font-semibold`}

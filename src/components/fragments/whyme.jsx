@@ -42,7 +42,7 @@ const WhyMe = ({ whyMes }) => {
         alt="remax-balon"
         width={500}
         height={200}
-        className="absolute w-full h-auto min-w-28 max-w-44 max-sm:max-w-16 -right-2 top-12"
+        className="absolute w-full h-auto min-w-28 max-w-44 max-sm:max-w-8 max-sm:-right-7 -right-2 top-12"
       />
       <div className="container max-w-[1250px] mx-auto">
         <div className="text-center space-y-3">

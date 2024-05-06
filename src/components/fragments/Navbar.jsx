@@ -2,10 +2,12 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Montserratt from "@/services/FontPremier";
 import clsx from "clsx";
+import { MyContext } from "@/lib/AppContext";
 
 const Navbar = ({ menus }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [menuActive, setMenuActive] = useState("HOME");
+  const { anchor } = MyContext();
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, []);
@@ -40,7 +42,7 @@ const Navbar = ({ menus }) => {
               <li
                 key={index}
                 className={clsx(
-                  menuActive == item.menu &&
+                  anchor == item.menu &&
                     "font-bold border-b-2 border-blue-remax"
                 )}
               >
@@ -75,7 +77,7 @@ const Navbar = ({ menus }) => {
               <li
                 key={index}
                 className={clsx(
-                  menuActive == item.menu &&
+                  anchor == item.menu &&
                     "font-bold border-b-2 border-blue-remax py-2"
                 )}
               >
