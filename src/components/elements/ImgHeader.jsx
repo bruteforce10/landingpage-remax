@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { InfoHeader } from "./infoHeader";
+import { InfoHeader } from "./infoHeader.jsx";
 
 const ImgHeader = () => {
   return (

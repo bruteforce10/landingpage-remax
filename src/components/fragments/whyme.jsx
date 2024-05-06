@@ -6,7 +6,7 @@ import Image from "next/image";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import Button from "../elements/Button";
 
-const WhyMe = ({ whyMes }) => {
+const WhyMeSection = ({ whyMes }) => {
   const [number, setNumber] = useState(6);
   const [show, setShow] = useState(false);
   const CardWhyMeNoSSR = dynamic(
@@ -97,4 +97,4 @@ const WhyMe = ({ whyMes }) => {
   );
 };
 
-export default WhyMe;
+export default WhyMeSection;

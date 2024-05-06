@@ -3,7 +3,7 @@ import TopNavbar from "@/components/fragments/NavbarTop.jsx";
 import BankPartners from "@/components/fragments/BankPartners.jsx";
 import Open_sans from "@/services/FontSecondary";
 import dynamic from "next/dynamic";
-import WhyMe from "@/components/fragments/Whyme.jsx";
+import WhyMeSection from "@/components/fragments/Whyme.jsx";
 
 export default function Home({ dataFetch }) {
   const HeaderNoSSR = dynamic(
@@ -26,7 +26,7 @@ export default function Home({ dataFetch }) {
       <HeaderNoSSR {...dataFetch} />
       <AboutNoSSR {...dataFetch} />
       <BankPartners {...dataFetch} />
-      <WhyMe {...dataFetch} />
+      <WhyMeSection {...dataFetch} />
     </main>
   );
 }
