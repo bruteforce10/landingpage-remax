@@ -1,6 +1,5 @@
 import React from "react";
 import IconTextName from "../elements/IconTextName";
-import useSWR from "swr";
 
 const TopNavbar = ({ topNavigations }) => {
   return (

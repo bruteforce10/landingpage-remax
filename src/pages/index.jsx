@@ -1,16 +1,19 @@
-import Navbar from "../components/fragments/Navbar";
-import TopNavbar from "../components/fragments/navbarTop";
-import BankPartners from "../components/fragments/BankPartners";
-import Open_sans from "../services/FontSecondary";
+import Navbar from "@/components/fragments/Navbar.jsx";
+import TopNavbar from "@/components/fragments/NavbarTop.jsx";
+import BankPartners from "@/components/fragments/BankPartners.jsx";
+import Open_sans from "@/services/FontSecondary";
 import dynamic from "next/dynamic";
-import WhyMe from "../components/fragments/WhyMe";
+import WhyMe from "@/components/fragments/Whyme.jsx";
 
 export default function Home({ dataFetch }) {
-  const HeaderNoSSR = dynamic(() => import("../components/fragments/header"), {
-    ssr: false,
-  });
+  const HeaderNoSSR = dynamic(
+    () => import("@/components/fragments/Header.jsx"),
+    {
+      ssr: false,
+    }
+  );
 
-  const AboutNoSSR = dynamic(() => import("../components/fragments/about"), {
+  const AboutNoSSR = dynamic(() => import("@/components/fragments/About.jsx"), {
     ssr: false,
   });
 
